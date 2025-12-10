@@ -54,6 +54,7 @@ select {
     border-radius: 6px;
     box-sizing: border-box; /* S'assure que le padding n'augmente pas la largeur totale */
     transition: border-color 0.3s;
+    
 }
 
 /* Effet au focus (quand l'utilisateur clique sur le champ) */
@@ -112,7 +113,15 @@ label {
     display: inline-block;
     margin-right: 20px;
     font-weight: normal;
+
 }
+
+.role label {
+  text-decoration: none; /* enlève le soulignement */
+  font-weight: normal;   /* si tu veux un style simple */
+  color: #333;           /* couleur standard */
+  cursor: pointer;       /* pour indiquer que c’est cliquable */
+
 
 /* Ligne de séparation */
 hr {
