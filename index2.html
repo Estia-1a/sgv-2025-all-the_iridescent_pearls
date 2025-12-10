@@ -12,9 +12,15 @@
   <header>
     <h1>Estia rent</h1>
   </header>
+
+<header class="toolbar">
   <h2>Profil</h2>
-  <input type="search" placeholder="Rechercher...">
-  <a href="index.html">Home</a>
+
+  <div class="tools">
+    <input type="search" placeholder="Rechercher..." />
+    <a href="index.html">Home</a>
+  </div>
+
    
     <main class="container">
 
@@ -61,7 +67,7 @@
         <fieldset class="form-control dob">
           <legend>Date de naissance</legend>
 
-          <label class="sr-only" for="jour">Jour</label>
+          <label class="sr-only" for="jour"></label>
           <select id="jour" name="jour" required>
             <option value="">Jour</option>
             <!-- jours 01 à 31 -->
@@ -74,7 +80,7 @@
             <option>31</option>
           </select>
 
-          <label class="sr-only" for="mois">Mois</label>
+          <label class="sr-only" for="mois"></label>
           <select id="mois" name="mois" required>
             <option value="">Mois</option>
             <option>01</option><option>02</option><option>03</option><option>04</option><option>05</option>
@@ -82,7 +88,7 @@
             <option>11</option><option>12</option>
           </select>
 
-          <label class="sr-only" for="annee">Année</label>
+          <label class="sr-only" for="annee"></label>
           <select id="annee" name="annee" required>
             <option value="">Année</option>
             <!-- Ajuste la plage d’années selon le besoin -->
