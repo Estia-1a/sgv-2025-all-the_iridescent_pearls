@@ -2,5 +2,123 @@ h1 {text-align: center;
     color: #ff2a00;}
 
 body {background-color: #24cdae;}
-img {width: 1000px;display: block;margin: 20px auto;}
-p, ul, h2, h1 {margin-left: 300px;}
+img {width: 10000px;display: block;margin: 20px auto;}
+
+/* --- Styles de base (Corps de la page) --- */
+body {
+    background-color: #20b2aa; /* Garde une base turquoise pour l'extérieur */
+    font-family: 'Arial', sans-serif; /* Police moderne et lisible */
+    color: #333; /* Couleur de texte sombre standard */
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Conteneur principal (La carte blanche) --- */
+#profil-form {
+    background-color: #ffffff; /* Fond blanc cassé/pur pour le formulaire */
+    max-width: 600px; /* Limite la largeur pour une meilleure lecture */
+    margin: 50px auto; /* Centre le formulaire et lui donne de l'espace en haut et en bas */
+    padding: 40px;
+    border-radius: 12px; /* Coins arrondis pour un look plus doux */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ajoute une ombre subtile pour l'effet "carte" */
+}
+
+/* --- Titres --- */
+h1.header-logo {
+    color: #fff; /* Couleur blanche pour le logo */
+    text-align: right;
+    padding: 20px 40px 0 0;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+#profil-form h2 { /* Si vous avez des sous-titres comme 'Profil' */
+    color: #20b2aa; /* Utilise la couleur turquoise comme accent */
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+/* --- Champs de formulaire (Input/Select/Textarea) --- */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select {
+    width: 100%; /* Les champs prennent toute la largeur du conteneur */
+    padding: 10px 15px;
+    margin-top: 5px;
+    margin-bottom: 20px; /* Plus d'espace entre les champs */
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box; /* S'assure que le padding n'augmente pas la largeur totale */
+    transition: border-color 0.3s;
+}
+
+/* Effet au focus (quand l'utilisateur clique sur le champ) */
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+select:focus {
+    border-color: #20b2aa; /* Accentuation turquoise */
+    outline: none; /* Supprime l'encadrement par défaut du navigateur */
+    box-shadow: 0 0 5px rgba(32, 178, 170, 0.5);
+}
+
+/* --- Boutons --- */
+button,
+input[type="submit"],
+input[type="button"] {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 15px;
+    transition: background-color 0.3s;
+}
+
+/* Bouton Sauvegarder (Primaire) */
+#profil-form input[value="Sauvegarder"] {
+    background-color: #20b2aa; /* Turquoise */
+    color: white;
+}
+
+#profil-form input[value="Sauvegarder"]:hover {
+    background-color: #1a9c94; /* Turquoise plus foncé au survol */
+}
+
+/* Bouton Annuler (Secondaire) */
+#profil-form input[value="Annuler"] {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+#profil-form input[value="Annuler"]:hover {
+    background-color: #e0e0e0;
+}
+
+/* --- Alignement et Espacement (Labels, Radio) --- */
+label {
+    display: block; /* Chaque label prend sa propre ligne */
+    font-weight: 600;
+    margin-bottom: 5px;
+    padding-top: 10px; /* Ajoute un peu d'espace au-dessus du label */
+}
+
+/* Style pour les options Radio (Rôle) */
+.radio-group label {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: normal;
+}
+
+/* Ligne de séparation */
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+
